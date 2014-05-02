@@ -4,24 +4,61 @@
     <head>
 	<meta charset="utf-8" />
 	<title>Button</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Carme);	
+
+	body{
+		margin-top:60px;
+		margin-left:10%;
+		margin-right: 10%
+		background-color:#CCC;
+		font-family:"Carme";
+		font-color:#333;
+	}
+
+	</style>
     </head>
     <body>
 	<h1>This is the very first text</h1>
 	<p id="foo">This doesn't do anything</p>
 	<p id="bar">Watch this text right here</p>
+	
 	<input type="button" onclick="changetext()" ondblclick="changetext2()"  value="Don't click this" />
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<input type="button" onclick="color()" value="click to change color" />
+	
+	<input type="button" onclick="colour()" value="click to fade color" />
+
 
 	<script type="text/javascript">
+		
+
 		function changetext() {
 			$("#bar").html("WHAT DID I JUST TELL YOU");
-			$("#bar").style.color = "red";
+			$("#bar").css("color", "red");
 		}
 
 		function changetext2() {
 			$("#foo").html("I lied about this not doing anything");
 		}
+
+		function testfade() {
+			alert("foo");
+			$("body").animate(
+				{background-color: "#E0F0FF"};
+				2000);
+		}
+
+		function colour() {
+			$("body").animate( {background-color: "#E0F0FF"};
+						2000);
+		}
+
+		function color(){
+			$("html").css("background-color", "#E0F0FF");
+			$("p").css("color", "#0000CC");
+		}	
 
 	</script>
 
