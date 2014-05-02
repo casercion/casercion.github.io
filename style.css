@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Candal|Carme);
+
+html{
+  margin-left:150px;
+  margin-right:150px;
+  background-color:#10102D;
+  cursor:crosshair;
+  font-family:"Carme";
+}
+
+body{
+  background-color:#06001a;
+  padding-top:10px;
+  padding-left:40px;
+  padding-bottom:20px;
+  width:600px;
+  border-radius:40px;
+  color:#9BAAE8;
+}
+
+img{
+  width:400px;
+  padding:20px;
+  border:double 30px #234A73;
+  border-radius:60px;
+  text-align:center;
+}
+
+h2{
+  font-family:"Candal";
+  line-height:10px;
+  color:#234A73;
+}
+
+p{
+  line-height:20px;
+}
+
+h1{
+  font-family:"Candal";
+  font-size:40px;
+}
+
+li{
+  text-indent:-4px;
+  line-height:30px;
+  text-align:left
+}
