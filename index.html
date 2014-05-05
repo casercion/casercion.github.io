@@ -20,15 +20,10 @@
   
   <script type="text/javascript">
 	function turnpic(){
-	      $("img").rotate({bind:{
-	      click: function(){
-	          $(this).rotate({
-	            angle: 0, 
-	            animateTo:180
-	          })
-	      }
-	  }
-	});
+	     $("img").css(
+	     	-webkit-transform: rotate(-180deg);
+	     	-moz-transform: rotate(-180deg);
+	     )
 	}
   </script>
     
