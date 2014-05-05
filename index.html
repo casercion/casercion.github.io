@@ -42,7 +42,7 @@
   <br><font class="small"><a href="http://vimeo.com/79814871">Solstice</a> from <a href="http://vimeo.com/furyoso">Furyoso</a> on <a href="https://vimeo.com">Vimeo</a>.</font></br>
   </div>
   
-  <input type="button" onclick="rickroll()" value="?" />
+  <input type="button" onclick="rickroll()" ondblclick="nicetry()" value="?" />
   
   <p></p>
   <h2>Looking for my song?</h2>
@@ -68,7 +68,11 @@
 	}
 	
 	function rickroll() {
-		$("div#video").html("The vieo is gone now! :0");
+		$("div#video").html("The video is gone now! :0");
+	}
+	
+	function nicetry(){
+		$("div#video").html("Did you think double-clicking this would bring it back? Nice try")
 	}
   </script>
 </body>
