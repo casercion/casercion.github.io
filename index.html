@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <title>Connor Asercion</title>
 	<link rel="stylesheet" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     </head>
     <body>
   
@@ -15,7 +16,19 @@
   <img alt="This right here is a picture of me, yup" src="https://sites.google.com/a/smpanthers.org/asercion-picture/home/photo%20(2).JPG" width = "400"/></div>
   <p></p>
   <font class="small">(I swear I have no idea why the picture is upside down, it was like this when I uploaded it)</font>
-    
+  <input type="button" onmouseover="turnpic()" value="Mouse over this!" />
+  
+  <script type="text/javascript">
+	$("img").rotate({bind:{
+	      click: function(){
+	          $(this).rotate({
+	            angle: 0, 
+	            animateTo:180
+	          })
+	      }
+	  }
+	});
+  </script>
     
   <p><h2>About Me</h2></p>
   <p>Connor Asercion is a high-school student located in Berkeley, California. This upcoming fall, I will be attending Stanford University.</p>
