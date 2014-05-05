@@ -19,7 +19,8 @@
   <input type="button" onmouseover="turnpic()" value="Mouse over this!" />
   
   <script type="text/javascript">
-	$("img").rotate({bind:{
+	function turnpic(){
+	      $("img").rotate({bind:{
 	      click: function(){
 	          $(this).rotate({
 	            angle: 0, 
@@ -28,6 +29,7 @@
 	      }
 	  }
 	});
+	}
   </script>
     
   <p><h2>About Me</h2></p>
