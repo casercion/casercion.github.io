@@ -5,7 +5,7 @@ html{
   margin-right:150px;
   cursor:crosshair;
   font-family:"Carme";
-  background:#10102D url("http://img4.wikia.nocookie.net/__cb20130304011308/ipercosmous/es/images/a/ae/Espectro.png") no-repeat fixed right bottom;
+  background:linear-gradient(135deg, #242450, #10102D) url("http://img4.wikia.nocookie.net/__cb20130304011308/ipercosmous/es/images/a/ae/Espectro.png") no-repeat fixed right bottom;
 }
 
 body{
