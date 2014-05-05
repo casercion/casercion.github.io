@@ -16,13 +16,19 @@
   <img alt="This right here is a picture of me, yup" src="https://sites.google.com/a/smpanthers.org/asercion-picture/home/photo%20(2).JPG" width = "400"/></div>
   <p></p>
   <font class="small">(I swear I have no idea why the picture is upside down, it was like this when I uploaded it)</font>
-  <input type="button" onmouseover="turnpic()" value="Mouse over this!" />
+  <input type="button" onmouseover="turnpic()" onmouseoff="returnpic()" value="Mouse over this!" />
   
   <script type="text/javascript">
 	function turnpic(){
-	     $("img").css("transform", "rotate(-15deg)");
+	     $("img").css("transform", "rotate(-180deg)");
 	     $("img").css("-webkit-transform", "rotate(-180deg)");
 	     $("img").css("-moz-transform", "rotate(-180deg)");
+	}
+  
+  	function returnpic(){
+	     $("img").css("transform", "rotate(0deg)");
+	     $("img").css("-webkit-transform", "rotate(0deg)");
+	     $("img").css("-moz-transform", "rotate(0deg)");
 	}
   </script>
     
