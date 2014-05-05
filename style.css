@@ -3,9 +3,9 @@
 html{
   margin-left:150px;
   margin-right:150px;
-  background-color:#10102D;
   cursor:crosshair;
   font-family:"Carme";
+  background:#10102D url("http://img4.wikia.nocookie.net/__cb20130304011308/ipercosmous/es/images/a/ae/Espectro.png") no-repeat fixed right bottom;
 }
 
 body{
