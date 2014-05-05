@@ -16,20 +16,6 @@
   <img alt="This right here is a picture of me, yup" src="https://sites.google.com/a/smpanthers.org/asercion-picture/home/photo%20(2).JPG" width = "400"/>
   <p></p>
   <input type="button" onmouseover="turnpic()" onmouseout="returnpic()" value="Mouse over this!" /></div>
-  
-  <script type="text/javascript">
-	function turnpic(){
-	     $("img").css("transform", "rotate(-180deg)");
-	     $("img").css("-webkit-transform", "rotate(-180deg)");
-	     $("img").css("-moz-transform", "rotate(-180deg)");
-	}
-  
-  	function returnpic(){
-	     $("img").css("transform", "rotate(0deg)");
-	     $("img").css("-webkit-transform", "rotate(0deg)");
-	     $("img").css("-moz-transform", "rotate(0deg)");
-	}
-  </script>
     
   <p><h2>About Me</h2></p>
   <p>Connor Asercion is a high-school student located in Berkeley, California. This upcoming fall, I will be attending Stanford University.</p>
@@ -52,9 +38,12 @@
   <font class="small">(* denotes position as stage manager)</font>
 
   <p><h2>Check out this neat video</h2></p>
-  <iframe src="//player.vimeo.com/video/79814871" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+  <div id="video"><iframe src="//player.vimeo.com/video/79814871" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
   <br><font class="small"><a href="http://vimeo.com/79814871">Solstice</a> from <a href="http://vimeo.com/furyoso">Furyoso</a> on <a href="https://vimeo.com">Vimeo</a>.</font></br>
-
+  </div>
+  
+  <input type="button" onclick="rickroll()" value="?" />
+  
   <p></p>
   <h2>Looking for my song?</h2>
   <br>Try clicking <a href="lyrics.html">here</a></br>  
@@ -63,5 +52,24 @@
   <br><font size="1">Why are you still here</font></br>
 
   <br><font class="small"><a href="http://es.ipercosmous.wikia.com/wiki/Archivo:Espectro.png">Background image credit</a></font></br>
+
+	
+  <script type="text/javascript">
+	function turnpic(){
+	     $("img").css("transform", "rotate(-180deg)");
+	     $("img").css("-webkit-transform", "rotate(-180deg)");
+	     $("img").css("-moz-transform", "rotate(-180deg)");
+	}
+  
+  	function returnpic(){
+	     $("img").css("transform", "rotate(0deg)");
+	     $("img").css("-webkit-transform", "rotate(0deg)");
+	     $("img").css("-moz-transform", "rotate(0deg)");
+	}
+	
+	function rickroll() {
+		$("#video").html(<iframe width="420" height="315" src="//www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>);
+	}
+  </script>
 </body>
 </html>
