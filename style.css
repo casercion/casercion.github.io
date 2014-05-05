@@ -19,6 +19,7 @@ body{
 }
 
 img{
+  opacity:80;
   width:400px;
   padding:20px;
   border:double 30px #10102D;
