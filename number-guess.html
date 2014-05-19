@@ -1,0 +1,39 @@
+<html lang="en">
+    <head>
+	<meta charset="utf-8" />
+	<title>Number Guessing</title>
+    </head>
+    <body>
+	<script>
+           var correct = 14
+           var a = prompt("I'm thinking of a number between 1-20...");
+           trycount = 0
+
+           while (a != correct)
+ 	   {
+		if (a > correct)
+		    {
+		     var b = prompt("Your guess, " + a + ", was too high. Try again!");
+		     trycount++;
+		    }
+		else if (a < correct)
+	   	    {
+		     var b = prompt("Your guess, " + a + ", was too low. Try again!);
+		     trycount++;
+	   	    }
+		else
+		    {
+		     var b = prompt("Woah, how did you get this? Try again");
+		     trycount++;
+		    }
+	    b = a
+	    }
+
+	    if (a == correct)
+	    {
+		trycount++;
+		alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
+
+        </script>
+    </body>
+</html>
