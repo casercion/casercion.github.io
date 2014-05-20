@@ -5,35 +5,38 @@
     </head>
     <body>
 	<script>
-           var correct = 14
            var a = prompt("I'm thinking of a number between 1-20...");
+           var correct = 14
            trycount = 0
 
-           while (a != correct)
+	   while (a != correct)
  	   {
 		if (a > correct)
 		    {
-		     var b = prompt("Your guess, " + a + ", was too high. Try again!");
 		     trycount++;
+		     alert("Your guess, " + a + ", was too high.");
+		     var b = prompt("Try again:");
 		    }
 		else if (a < correct)
 	   	    {
-		     var b = prompt("Your guess, " + a + ", was too low. Try again!);
-		     trycount++;
-	   	    }
+	   	     trycount++;
+		     alert("Your guess, " + a + ", was too low.");
+		     var b = prompt("Try again:");
+		    }
 		else
 		    {
-		     var b = prompt("Woah, how did you get this? Try again");
 		     trycount++;
+		     alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
 		    }
 	    b = a
+	    return a
 	    }
 
-	    if (a == correct)
+	    else if (a == correct)
 	    {
 		trycount++;
 		alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
-
+	    }
         </script>
     </body>
 </html>
