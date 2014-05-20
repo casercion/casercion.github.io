@@ -23,20 +23,14 @@
 		     window.alert("Your guess, " + a + ", was too low.");
 		     var b = window.prompt("Try again:");
 		    }
-		else
-		    {
-		     trycount++;
-		     window.alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
-		    }
+		else 
+		    {var b = window.prompt("Wait, what? Try again");}
 	    b = a
 	    return a
-	    }
-
-	    else if (a == correct)
-	    {
-		trycount++;
-		window.alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
-	    }
+	   } 
+	
+	   trycount++;
+	   window.alert("Your guess, " + a + ", was correct! It took you " + trycount + " tries");
         </script>
     </body>
 </html>
