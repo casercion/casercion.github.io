@@ -6,7 +6,7 @@
     <body>
 	<script>
            var a = prompt("I'm thinking of a number between 1-20...");
-           var correct = 14
+           var correct = Math.ceil(Math.random()*10);
            trycount = 0
 
 	   while (a != correct)
@@ -14,19 +14,19 @@
 		if (a > correct)
 		    {
 		     trycount++;
-		     alert("Your guess, " + a + ", was too high.");
-		     var b = prompt("Try again:");
+		     window.alert("Your guess, " + a + ", was too high.");
+		     var b = window.prompt("Try again:");
 		    }
 		else if (a < correct)
 	   	    {
 	   	     trycount++;
-		     alert("Your guess, " + a + ", was too low.");
-		     var b = prompt("Try again:");
+		     window.alert("Your guess, " + a + ", was too low.");
+		     var b = window.prompt("Try again:");
 		    }
 		else
 		    {
 		     trycount++;
-		     alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
+		     window.alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
 		    }
 	    b = a
 	    return a
@@ -35,7 +35,7 @@
 	    else if (a == correct)
 	    {
 		trycount++;
-		alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
+		window.alert("Your guess, " + a + ", was correct! It took you" + trycount + "tries");
 	    }
         </script>
     </body>
