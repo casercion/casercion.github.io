@@ -25,13 +25,13 @@
         stroke(0, 0, 0);
         
         if (pow(randx-200, 2) + pow(randy-200, 2) < pow(200,2)) {
-            stroke(0, 255, 0);
+            stroke(155,170,232);
             point(randx, randy);
             circular++;
         }
         
         else{
-            stroke(0, 0, 0);
+            stroke(35,74,115);
             point(randx, randy);
         }
         
@@ -48,15 +48,15 @@
         
         textAlign(CENTER, LEFT);
         textSize(16);
-        text("Total dots: " + total, 10, 420);
+        text("Total dots: " + total, 70, 420);
         
         textAlign(CENTER, RIGHT);
         textSize(16);
-        text("Inside circle dots: " + circular, 390, 420);
+        text("Inside circle dots: " + circular, 315, 420);
         
         textAlign(CENTER, CENTER);
         textSize(16);
-        text(((4 * circular) / total), 200, 425);
+        text(((4 * circular) / total), 200, 435);
       }
     </script>    
   </head>
