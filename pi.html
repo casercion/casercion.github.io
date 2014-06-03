@@ -64,11 +64,15 @@
   <body>
     <h1>Pi Approximation</h1>
     <p></p>
-    <p><h2>How it works:</h2></p>
-    <br>The area of a circle is pi times the radius squared. On this 400 pixel canvas, the radius of the circle in question is 200 pixels.
-    <br>
-    <br>If the distance from the center of the circle (200,200) is 
     <div align="center"></div><canvas id="targetcanvas" width="400" height="450"></canvas></div>
+    <p>
+    <p><h2>How it works:</h2></p>
+    <br>The area of a circle is pi times the radius squared. On this canvas, the radius of the circle in question is 200 pixels.
+    <p>Pixels are generated randomly on the 400x400 canvas. If the distance of the pixel from the center of the canvas (200,200) is less than 200 pixels, it is light blue. Otherwise, it is dark blue.</p>
+    <p>The computer takes the ratio between the dark blue and light blue pixels (the ratio of all points in the square to all points within the circle)</p>
+    <p>A circle's area is pi * the radius^2. This particular square's area is (2 * the radius)^2, or 4 * the radius^2.</p>
+    <p>From this, we can derive that</p>
+    <div align="center"><h2>pi = (number of dots in the circle/number of total dots in the square) * 4</h2></div>
   </body>
 </html>
 
