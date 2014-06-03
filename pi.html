@@ -37,7 +37,6 @@
         
         total++;
         
-        textAlign(CENTER, CENTER);
         
         fill(6,0,26);
         stroke(6,0,26);
@@ -47,14 +46,17 @@
         //Total dots
         fill(234,226,187);
         
+        textAlign(CENTER, LEFT);
         textSize(16);
-        text("Total dots: " + total, 70, 420);
+        text("Total dots: " + total, 10, 420);
         
+        textAlign(CENTER, RIGHT);
         textSize(16);
-        text("Inside circle dots: " + circular, 312, 420);
+        text("Inside circle dots: " + circular, 390, 420);
         
+        textAlign(CENTER, CENTER);
         textSize(16);
-        text(((4 * circular) / total), 200, 200);
+        text(((4 * circular) / total), 200, 425);
       }
     </script>    
   </head>
@@ -62,7 +64,7 @@
   <body>
     <h1>Pi Approximation</h1>
     <p></p>
-    <canvas id="targetcanvas" width="400" height="450"></canvas>
+    <div align=center></div><canvas id="targetcanvas" width="400" height="450"></canvas></div>
   </body>
 </html>
 
